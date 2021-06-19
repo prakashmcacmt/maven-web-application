@@ -4,12 +4,12 @@
 	
 	<groupId>com.mt</groupId>
 	<artifactId>maven-web-application</artifactId>
-	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
 	
 	<name>maven-web-application</name>
 
-	<description>Maven Web Project for Java Project</description>
+	<description>Maven Web Project for Java Programming Language</description>
 
 	<organization>
 		<name>Mithun Technologies</name>
@@ -21,9 +21,10 @@
 		<spring.version>5.1.2.RELEASE</spring.version>
 		<junit.version>4.11</junit.version>
 		<log4j.version>1.2.17</log4j.version>
-		 <sonar.host.url>http://13.235.91.78:9000/</sonar.host.url>
-                <sonar.login>03d0ddd3cedc0cbae7c5487a7af31dd3aec36ffb</sonar.login>
-		             
+		<sonar.host.url>http://13.127.232.163:9000/</sonar.host.url>
+                <sonar.login>admin</sonar.login>
+		<sonar.password>admin</sonar.password>  
+              
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
@@ -98,13 +99,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Releases Nexus Repository</name>
-	      <url>http://65.0.131.128:9980/mithuntechnologies/repository/flipkart-release/</url>
+	      <url>http://13.233.66.79:9980/mithuntechnologies/repository/wallmart-release/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Snapshot Nexus Repository </name>
-	      <url>http://65.0.131.128:9980/mithuntechnologies/repository/flipkart-snapshot/</url>
+	      <url>http://13.233.66.79:9980/mithuntechnologies/repository/wallmart-snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
@@ -114,7 +115,6 @@
 		
 		<plugins>
 			<plugin>
-				<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.3</version>
@@ -122,8 +122,6 @@
 					<source>${jdk.version}</source>
 					<target>${jdk.version}</target>
 				</configuration>
-			</plugin>
-
 			</plugin>
 
 			<plugin>
