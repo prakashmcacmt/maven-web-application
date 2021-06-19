@@ -18,6 +18,8 @@
 	</span>
 	<span style="font-weight: bold;">
 		Mithun Software Solutions, 
+		Balaji Reddy
+		Bhaskar Reddy
 		Martha Halli,
 		Bangalore,
 		+91-9980923226,
