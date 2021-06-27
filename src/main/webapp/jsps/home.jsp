@@ -22,6 +22,8 @@
 		Bangalore,
 		+91-9980923226,+91-8296242028
 		devopstrainingblr@gmail.com
+		Bhaskar Reddy L
+		Balaji Reddy L
 		<br>
 		<a href="mailto:devopstrainingblr@gmail.com">Mail to Mithun Technologies</a>
 	</span>
