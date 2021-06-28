@@ -10,6 +10,7 @@ cron('* * * * *')
 }
 options{
 buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '5', daysToKeepStr: '', numToKeepStr: '5'))
+
 timestamps()
 }
 stages{
@@ -47,12 +48,14 @@ post{
 
 regards,
 E Prakash''', subject: 'Build Over.... Declarative way-Success', to: 'prakashmcacmt@gmail.com' 
+cleanWS()
   }
   failure{
   emailext body: '''Build Over.. Declarative way -fail
 
 regards,
 E Prakash''', subject: 'Build Over.... Declarative way-fail', to: 'prakashmcacmt@gmail.com' 
+cleanWS()
   }
 }
 }
