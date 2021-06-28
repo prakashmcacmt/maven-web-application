@@ -3,11 +3,11 @@ agent any
 tools{
 maven 'Maven3.6.3'
 }
-triggers{
+//triggers{
 //pollSCM('* * * * *')
 //cron('* * * * *')
 //githubPush()
-}
+//}
 options{
 buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '5', daysToKeepStr: '', numToKeepStr: '5'))
 
