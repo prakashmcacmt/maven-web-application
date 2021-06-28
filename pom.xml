@@ -98,7 +98,7 @@
 	
 	    <repository>
 	      <id>nexus</id>
-	      <name>Prakash Releases Nexus Repository</name>
+	      <name>Prakash Release Nexus Repository</name>
 	      <url>http://65.0.184.110:8081/repository/Maven-Jss-Release/</url>
 	    </repository>
 	    
