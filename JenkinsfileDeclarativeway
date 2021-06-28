@@ -32,4 +32,18 @@ stages{
    }
   }
   }
+post{
+  success{
+  emailext body: '''Build Over.. Declarative way -Success
+
+regards,
+E Prakash''', subject: 'Build Over.... Declarative way-Success', to: 'prakashmcacmt@gmail.com' 
+  }
+  failure{
+  emailext body: '''Build Over.. Declarative way -fail
+
+regards,
+E Prakash''', subject: 'Build Over.... Declarative way-fail', to: 'prakashmcacmt@gmail.com' 
+  }
+}
 }
