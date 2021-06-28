@@ -1,0 +1,18 @@
+pipeline{
+agent any
+tools{
+maven 'Maven3.6.3'
+}
+stages{
+  stage("Clonong our code"){
+    steps{
+    git branch: 'development', credentialsId: 'b557371b-28d3-4c15-86a8-62ea2b03bbc6', url: 'https://github.com/prakashmcacmt/maven-web-application.git'
+    }
+  }
+  stage("Build"){
+   step{
+   sh "mvn clean package"
+   }
+  }
+  }
+}
