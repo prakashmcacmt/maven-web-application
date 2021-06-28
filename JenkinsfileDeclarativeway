@@ -23,6 +23,7 @@ stages{
    steps{
    sh "mvn clean deploy"
    }
+   }
    stage('Deployment Application into Tomcat'){
    steps{
    sshagent(['92b884bf-632d-462d-89df-bf1f0a6d1897']) {
