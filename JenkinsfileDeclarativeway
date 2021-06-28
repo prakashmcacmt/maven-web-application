@@ -19,5 +19,10 @@ stages{
    sh "mvn clean sonar:sonar"
    }
   }
+  stage('Upload artefact into Nexus'){
+   steps{
+   sh "mvn clean deploy"
+   }
+  }
   }
 }
