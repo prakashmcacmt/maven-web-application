@@ -14,5 +14,10 @@ stages{
    sh "mvn clean package"
    }
   }
+  stage('Executing Sonarqube Report'){
+   steps{
+   sh "mvn clean sonar:sonar"
+   }
+  }
   }
 }
